@@ -20,24 +20,45 @@ class ViewController: UIViewController {
     }
 
     @IBAction func minneapolis(_ sender: UIButton) {
+    let alertController = UIAlertController(title: "Sorry!", message: "This page is coming soon!", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Okay", style: .default))
+        self.present(alertController, animated: true, completion: nil)
     }
     
     @IBAction func newyork(_ sender: UIButton) {
+        let alertController = UIAlertController(title: "Sorry!", message: "This page is coming soon!", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Okay", style: .default))
+        self.present(alertController, animated: true, completion: nil)
     }
     
     @IBAction func aurora(_ sender: UIButton) {
+        let alertController = UIAlertController(title: "Sorry!", message: "This page is coming soon!", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Okay", style: .default))
+        self.present(alertController, animated: true, completion: nil)
     }
     
     @IBAction func losangeles(_ sender: UIButton) {
+        let alertController = UIAlertController(title: "Sorry!", message: "This page is coming soon!", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Okay", style: .default))
+        self.present(alertController, animated: true, completion: nil)
     }
     
     @IBAction func chicago(_ sender: UIButton) {
+        let alertController = UIAlertController(title: "Sorry!", message: "This page is coming soon!", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Okay", style: .default))
+        self.present(alertController, animated: true, completion: nil)
     }
     
     @IBAction func houston(_ sender: UIButton) {
+    let alertController = UIAlertController(title: "Sorry!", message: "This page is coming soon!", preferredStyle: .alert)
+    alertController.addAction(UIAlertAction(title: "Okay", style: .default))
+    self.present(alertController, animated: true, completion: nil)
     }
 
     @IBAction func columbus(_ sender: UIButton) {
+        let alertController = UIAlertController(title: "Sorry!", message: "This page is coming soon!", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Okay", style: .default))
+        self.present(alertController, animated: true, completion: nil)
     }
     
 }
