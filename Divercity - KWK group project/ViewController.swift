@@ -9,12 +9,36 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    @IBAction func seattle(_ sender: UIButton) {
+    }
 
+    @IBAction func louisville(_ sender: UIButton) {
+    }
 
+    @IBAction func minneapolis(_ sender: UIButton) {
+    }
+    
+    @IBAction func newyork(_ sender: UIButton) {
+    }
+    
+    @IBAction func aurora(_ sender: UIButton) {
+    }
+    
+    @IBAction func losangeles(_ sender: UIButton) {
+    }
+    
+    @IBAction func chicago(_ sender: UIButton) {
+    }
+    
+    @IBAction func houston(_ sender: UIButton) {
+    }
+
+    @IBAction func columbus(_ sender: UIButton) {
+    }
+    
 }
 

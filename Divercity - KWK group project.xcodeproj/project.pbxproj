@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180BA86124BF864900D44DFE /* SeattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180BA86024BF864900D44DFE /* SeattleViewController.swift */; };
+		180BA86324BF87BC00D44DFE /* Louisville View Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180BA86224BF87BC00D44DFE /* Louisville View Controller.swift */; };
 		CF40FDC724BE4E27004AD119 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF40FDC624BE4E27004AD119 /* AppDelegate.swift */; };
 		CF40FDC924BE4E27004AD119 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF40FDC824BE4E27004AD119 /* SceneDelegate.swift */; };
 		CF40FDCB24BE4E27004AD119 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF40FDCA24BE4E27004AD119 /* ViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180BA86024BF864900D44DFE /* SeattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeattleViewController.swift; sourceTree = "<group>"; };
+		180BA86224BF87BC00D44DFE /* Louisville View Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Louisville View Controller.swift"; sourceTree = "<group>"; };
 		CF40FDC324BE4E27004AD119 /* Divercity - KWK group project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Divercity - KWK group project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF40FDC624BE4E27004AD119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF40FDC824BE4E27004AD119 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				CF40FDD424BE4E2D004AD119 /* LaunchScreen.storyboard */,
 				CF40FDD724BE4E2D004AD119 /* Info.plist */,
 				CF40FDCF24BE4E27004AD119 /* Divercity___KWK_group_project.xcdatamodeld */,
+				180BA86024BF864900D44DFE /* SeattleViewController.swift */,
+				180BA86224BF87BC00D44DFE /* Louisville View Controller.swift */,
 			);
 			path = "Divercity - KWK group project";
 			sourceTree = "<group>";
@@ -262,9 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180BA86324BF87BC00D44DFE /* Louisville View Controller.swift in Sources */,
 				CF40FDCB24BE4E27004AD119 /* ViewController.swift in Sources */,
 				CF40FDD124BE4E27004AD119 /* Divercity___KWK_group_project.xcdatamodeld in Sources */,
 				CF40FDC724BE4E27004AD119 /* AppDelegate.swift in Sources */,
+				180BA86124BF864900D44DFE /* SeattleViewController.swift in Sources */,
 				CF40FDC924BE4E27004AD119 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

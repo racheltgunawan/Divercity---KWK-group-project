@@ -12,24 +12,154 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Divercity___KWK_group_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLr-Lb-kLa">
-                                <rect key="frame" x="186" y="245" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Explore Cities!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vjq-vg-d5S">
+                                <rect key="frame" x="152" y="114" width="110" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhG-ix-Du5">
+                                <rect key="frame" x="25" y="196" width="84" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Seattle, WA"/>
+                                <connections>
+                                    <action selector="seattle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pmz-v1-zc1"/>
+                                    <segue destination="a28-Oa-Kmb" kind="show" id="kPY-OK-oUu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVd-ND-b0w">
+                                <rect key="frame" x="162" y="210" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Louisville, KY"/>
+                                <connections>
+                                    <action selector="louisville:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Tu-5w-IZY"/>
+                                    <segue destination="rIH-e7-kun" kind="show" id="FaX-Ql-zPt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xto-CH-1A7">
+                                <rect key="frame" x="169" y="444" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Aurora, CO"/>
+                                <connections>
+                                    <action selector="aurora:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NCb-cc-yTF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZ5-KL-e8d">
+                                <rect key="frame" x="280" y="209" width="114" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Minneapolis, MN"/>
+                                <connections>
+                                    <action selector="minneapolis:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wZ6-rL-7Ua"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ny2-GJ-4N6">
+                                <rect key="frame" x="40" y="444" width="94" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="New York, NY"/>
+                                <connections>
+                                    <action selector="newyork:" destination="BYZ-38-t0r" eventType="touchUpInside" id="css-jp-5EX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ijx-De-ELC">
+                                <rect key="frame" x="281" y="444" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Los Angeles, CA"/>
+                                <connections>
+                                    <action selector="losangeles:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YuG-Vy-Fa9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2c-k1-iG4">
+                                <rect key="frame" x="29" y="649" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Chicago, IL"/>
+                                <connections>
+                                    <action selector="chicago:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FUn-GQ-ugs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDI-OP-BeQ">
+                                <rect key="frame" x="164" y="649" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Houston, TX"/>
+                                <connections>
+                                    <action selector="houston:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q4t-Gl-pK8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBr-gf-ICp">
+                                <rect key="frame" x="287" y="649" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Columbus, OH"/>
+                                <connections>
+                                    <action selector="columbus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rne-bu-umt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="LdP-lZ-oMq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="115"/>
+            <point key="canvasLocation" x="11.594202898550726" y="-769.41964285714278"/>
+        </scene>
+        <!--Seattle View Controller-->
+        <scene sceneID="m5H-M5-eyw">
+            <objects>
+                <viewController id="a28-Oa-Kmb" customClass="SeattleViewController" customModule="Divercity___KWK_group_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S5K-ZA-cib">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8J-G1-LIM">
+                                <rect key="frame" x="61" y="752" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="7iz-yv-aS5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="dCk-NX-NJS"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Qtg-ud-d9c"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WfW-2g-Zwr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="703" y="-769"/>
+        </scene>
+        <!--Louisville View Controller-->
+        <scene sceneID="Gc8-ew-dhw">
+            <objects>
+                <viewController id="rIH-e7-kun" customClass="Louisville_View_Controller" customModule="Divercity___KWK_group_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5R0-50-z9q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AI-cV-4eA">
+                                <rect key="frame" x="58" y="808" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="GrK-eT-4FA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="i6b-Lx-BrB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bzd-hi-WhJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uqz-5Z-I1i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1412" y="-769"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="GrK-eT-4FA"/>
+    </inferredMetricsTieBreakers>
 </document>
