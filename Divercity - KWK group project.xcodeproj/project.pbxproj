@@ -18,6 +18,7 @@
 		CF40FDD624BE4E2D004AD119 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF40FDD424BE4E2D004AD119 /* LaunchScreen.storyboard */; };
 		CF40FDE124BE4E2D004AD119 /* Divercity___KWK_group_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF40FDE024BE4E2D004AD119 /* Divercity___KWK_group_projectTests.swift */; };
 		CF40FDEC24BE4E2D004AD119 /* Divercity___KWK_group_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF40FDEB24BE4E2D004AD119 /* Divercity___KWK_group_projectUITests.swift */; };
+		CF4BA44B24C0CB5600E6DFB1 /* SeattleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4BA44A24C0CB5600E6DFB1 /* SeattleScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		CF40FDE724BE4E2D004AD119 /* Divercity - KWK group projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Divercity - KWK group projectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF40FDEB24BE4E2D004AD119 /* Divercity___KWK_group_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Divercity___KWK_group_projectUITests.swift"; sourceTree = "<group>"; };
 		CF40FDED24BE4E2D004AD119 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF4BA44A24C0CB5600E6DFB1 /* SeattleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeattleScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				CF40FDCF24BE4E27004AD119 /* Divercity___KWK_group_project.xcdatamodeld */,
 				180BA86024BF864900D44DFE /* SeattleViewController.swift */,
 				180BA86224BF87BC00D44DFE /* Louisville View Controller.swift */,
+				CF4BA44A24C0CB5600E6DFB1 /* SeattleScrollView.swift */,
 			);
 			path = "Divercity - KWK group project";
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				180BA86324BF87BC00D44DFE /* Louisville View Controller.swift in Sources */,
+				CF4BA44B24C0CB5600E6DFB1 /* SeattleScrollView.swift in Sources */,
 				CF40FDCB24BE4E27004AD119 /* ViewController.swift in Sources */,
 				CF40FDD124BE4E27004AD119 /* Divercity___KWK_group_project.xcdatamodeld in Sources */,
 				CF40FDC724BE4E27004AD119 /* AppDelegate.swift in Sources */,
