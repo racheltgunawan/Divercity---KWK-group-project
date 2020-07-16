@@ -11,55 +11,75 @@ import UIKit
 class SeattleViewController: UIViewController {
 
     @IBOutlet weak var articleButton: UIButton!
-    @IBOutlet weak var articleLabel: UILabel!
+    //@IBOutlet weak var articleLabel: UILabel!
+    
+    @IBOutlet weak var articleDropDown: UIButton!
+    @IBOutlet weak var articleDropDown2: UIButton!
     
     @IBOutlet weak var businessButton: UIButton!
-    @IBOutlet weak var businessLabel: UILabel!
+    //@IBOutlet weak var businessLabel: UILabel!
+    @IBOutlet weak var businessDropDown: UIButton!
     
-    @IBOutlet weak var restaurantButton: UIButton!
-    @IBOutlet weak var restaurantLabel: UILabel!
+    
+    @IBOutlet weak var petitionsButton: UIButton!
+    //@IBOutlet weak var restaurantLabel: UILabel!
+    @IBOutlet weak var petitionsDropDown: UIButton!
     
     @IBAction func selectArticle(_ sender: Any) {
         UIView.animate(withDuration: 0.3, animations: {
-            if self.articleLabel.isHidden{
-                self.movePosition(button: self.businessButton, label: self.businessLabel, yPosition: Double(self.articleLabel.frame.origin.y + self.articleLabel.frame.size.height))
-                self.movePosition(button: self.restaurantButton, label: self.restaurantLabel, yPosition: Double(self.restaurantButton.frame.origin.y + self.articleLabel.frame.size.height))
+            if self.articleDropDown.isHidden{
+                self.movePosition(button: self.businessButton, label: self.businessDropDown, yPosition: Double(self.articleDropDown2.frame.origin.y + self.articleDropDown2.frame.size.height))
+                self.movePosition(button: self.petitionsButton, label: self.petitionsDropDown, yPosition: Double(self.petitionsButton.frame.origin.y + (self.articleDropDown2.frame.size.height * 2)))
             }else{
-                self.movePosition(button: self.businessButton, label: self.businessLabel, yPosition: 50.0)
-                self.movePosition(button: self.restaurantButton, label: self.restaurantLabel, yPosition: Double(self.restaurantButton.frame.origin.y - self.articleLabel.frame.size.height))
+                self.movePosition(button: self.businessButton, label: self.businessDropDown, yPosition: 50.0)
+                self.movePosition(button: self.petitionsButton, label: self.petitionsDropDown, yPosition: Double(self.petitionsButton.frame.origin.y - (self.articleDropDown2.frame.size.height * 2)))
             }
         })
-        self.articleLabel.isHidden = !self.articleLabel.isHidden
+        self.articleDropDown2.isHidden = !self.articleDropDown2.isHidden
+        self.articleDropDown.isHidden = !self.articleDropDown.isHidden
         self.view.layoutIfNeeded()
     }
     
     @IBAction func selectBusiness(_ sender: Any) {
         UIView.animate(withDuration: 0.3, animations: {
-            if self.businessLabel.isHidden{
-                self.movePosition(button: self.restaurantButton, label: self.restaurantLabel, yPosition: Double(self.restaurantButton.frame.origin.y + self.businessLabel.frame.size.height))
+            if self.businessDropDown.isHidden{
+                self.movePosition(button: self.petitionsButton, label: self.petitionsDropDown, yPosition: Double(self.petitionsButton.frame.origin.y + self.businessDropDown.frame.size.height))
             }else{
-                self.movePosition(button: self.restaurantButton, label: self.restaurantLabel, yPosition: Double(self.restaurantButton.frame.origin.y - self.businessLabel.frame.size.height))
+                self.movePosition(button: self.petitionsButton, label: self.petitionsDropDown, yPosition: Double(self.petitionsButton.frame.origin.y - self.businessDropDown.frame.size.height))
             }
         })
-        self.businessLabel.isHidden = !self.businessLabel.isHidden
+        self.businessDropDown.isHidden = !self.businessDropDown.isHidden
         self.view.layoutIfNeeded()
     }
     
-    @IBAction func selectRestaurant(_ sender: Any) {
-        restaurantLabel.frame.origin.y = restaurantButton.frame.origin.y + 50.0
-        restaurantLabel.isHidden = !restaurantLabel.isHidden
+    @IBAction func selectPetition(_ sender: Any) {
+        petitionsDropDown.frame.origin.y = petitionsButton.frame.origin.y + 50.0
+        petitionsDropDown.isHidden = !petitionsDropDown.isHidden
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        articleDropDown.isHidden = true
+        articleDropDown2.isHidden = true
+        businessDropDown.isHidden = true
+        petitionsDropDown.isHidden = true
     }
-    func movePosition(button : UIButton, label : UILabel, yPosition : Double){
+    func movePosition(button : UIButton, label : UIButton, yPosition : Double){
         button.frame = CGRect(x: 0.0, y: yPosition, width: 414.0, height: 50.0)
         label.frame.origin.y = button.frame.origin.y + 50.0
     }
-
+    
+    
+    @IBAction func selectArticleDropDown(_ sender: Any) {
+        UIApplication.shared.open(URL(string: "https://www.huffpost.com/entry/say-her-name-charleena-lyles-the-story-you-havent_b_59627e64e4b0cf3c8e8d59b0")! as URL, options: [:], completionHandler: nil)
+    }
+    
+    @IBAction func selectArticleDropDown2(_ sender: Any) {
+        UIApplication.shared.open(URL(string: "https://www.instagram.com/p/CBmMN3UgxvJ/?igshid=r2lp5lmx7tp3")! as URL, options: [:], completionHandler: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
