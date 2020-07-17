@@ -84,32 +84,37 @@ class SeattleViewController: UIViewController {
     
     @IBAction func selectArticleDropDown(_ sender: Any) {
         UIApplication.shared.open(URL(string: "https://www.huffpost.com/entry/say-her-name-charleena-lyles-the-story-you-havent_b_59627e64e4b0cf3c8e8d59b0")! as URL, options: [:], completionHandler: nil)
-        /*self.articleButton.isHidden = false;
-        self.petitionsButton.isHidden = false;
-        self.businessButton.isHidden = false;*/
+        UIView.animate(withDuration: 0.3, animations: {
+          self.movePosition(button: self.businessButton, label: self.businessDropDown, yPosition: 50.0)
+          self.movePosition(button: self.petitionsButton, label: self.petitionsDropDown, yPosition: Double(self.petitionsButton.frame.origin.y - (self.articleDropDown2.frame.size.height * 2)))
+          self.petitionsDropDown2.frame.origin.y = self.petitionsDropDown.frame.origin.y + self.petitionsDropDown.frame.size.height
+          self.articleDropDown.isHidden = !self.articleDropDown.isHidden
+          self.articleDropDown2.isHidden = !self.articleDropDown2.isHidden
+        })
     }
     
     @IBAction func selectArticleDropDown2(_ sender: Any) {
         UIApplication.shared.open(URL(string: "https://www.instagram.com/p/CBmMN3UgxvJ/?igshid=r2lp5lmx7tp3")! as URL, options: [:], completionHandler: nil)
+        UIView.animate(withDuration: 0.3, animations: {
+          self.movePosition(button: self.businessButton, label: self.businessDropDown, yPosition: 50.0)
+          self.movePosition(button: self.petitionsButton, label: self.petitionsDropDown, yPosition: Double(self.petitionsButton.frame.origin.y - (self.articleDropDown2.frame.size.height * 2)))
+          self.petitionsDropDown2.frame.origin.y = self.petitionsDropDown.frame.origin.y + self.petitionsDropDown.frame.size.height
+          self.articleDropDown.isHidden = !self.articleDropDown.isHidden
+          self.articleDropDown2.isHidden = !self.articleDropDown2.isHidden
+        })
     }
     
     var businesses = ["https://bakedfromthehart.com/about/", "http://kingphillycheesesteaksseattle2.cafecityguide.website", "http://chickenexpressseattle2.cafecityguide.website", "https://www.facebook.com/pg/nanassouthernkitchen/posts/?ref=page_internal", "https://jebenacafe.com", "https://thecomfortzonesoulfood.com"]
     
     
-    
-    
-    /*@IBAction func clickToSupportBusiness(_ sender: Any) {
-    let number = Int.random(in: 0 ..< 4)
-    UIApplication.shared.open(URL(string: "\(businesses[number])")! as URL, options: [:], completionHandler: nil)
-    
-    
-    
-    }*/
-    
-    //businessDropDown.titleLabel.numberOfLines = 2
     @IBAction func randomBusiness(_ sender: Any) {
         let number = Int.random(in: 0 ..< 6)
         UIApplication.shared.open(URL(string: "\(businesses[number])")! as URL, options: [:], completionHandler: nil)
+        UIView.animate(withDuration: 0.3, animations: {
+          self.movePosition(button: self.petitionsButton, label: self.petitionsDropDown, yPosition: Double(self.petitionsButton.frame.origin.y - self.businessDropDown.frame.size.height))
+          self.petitionsDropDown2.frame.origin.y = self.petitionsDropDown.frame.origin.y + self.petitionsDropDown.frame.size.height
+          self.businessDropDown.isHidden = !self.businessDropDown.isHidden
+        })
     }
     
     @IBAction func petitionsLink1(_ sender: Any) {
