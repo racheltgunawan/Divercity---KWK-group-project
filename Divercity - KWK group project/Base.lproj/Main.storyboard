@@ -118,15 +118,12 @@
                                 <rect key="frame" x="61" y="752" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="7iz-yv-aS5"/>
-                                </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FGO-rq-Rlr">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="opV-14-uyO" customClass="SeattleScrollView" customModule="Divercity___KWK_group_project" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="opV-14-uyO" customClass="SeattleScrollView" customModule="Divercity___KWK_group_project" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="-41" width="414" height="1000"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="HCy-S9-nbO">
                                                 <rect key="frame" x="0.0" y="475" width="414" height="50"/>
@@ -137,17 +134,10 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Bx6-Ip-Yxe"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="Business"/>
                                                 <connections>
                                                     <action selector="selectBusiness:" destination="a28-Oa-Kmb" eventType="touchUpInside" id="DDc-AP-4r3"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hE1-Tl-wKK">
-                                                <rect key="frame" x="37" y="797" width="46" height="82"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
-                                                <connections>
-                                                    <segue destination="BYZ-38-t0r" kind="show" id="lZb-AK-dvW"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmU-cg-ziC">
@@ -173,15 +163,36 @@
                                                     <action selector="selectArticleDropDown:" destination="a28-Oa-Kmb" eventType="touchUpInside" id="lu0-af-pxc"/>
                                                 </connections>
                                             </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZ5-zL-86N">
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uZ5-zL-86N">
                                                 <rect key="frame" x="20" y="100" width="374" height="153"/>
                                                 <color key="backgroundColor" red="0.64872708489999997" green="0.62513353309999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="click here for business"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Click Here to Support a Random Black Owned Business!">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <action selector="randomBusiness:" destination="a28-Oa-Kmb" eventType="touchUpInside" id="mY8-zT-uue"/>
+                                                </connections>
                                             </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4s-3g-F1W">
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B4s-3g-F1W">
                                                 <rect key="frame" x="20" y="150" width="374" height="50"/>
                                                 <color key="backgroundColor" red="0.64872708489999997" green="0.62513353309999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="click here for petitions"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Remove Confederate Monument from Seattle Cemetary">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CbF-h9-JeE">
                                                 <rect key="frame" x="0.0" y="100" width="414" height="50"/>
@@ -195,12 +206,35 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fV2-yC-qy8">
-                                                <rect key="frame" x="20" y="110" width="374" height="50"/>
+                                                <rect key="frame" x="20" y="100" width="374" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.64872708489999997" green="0.62513353309999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="More information about Charleena Lyles"/>
                                                 <connections>
                                                     <action selector="selectArticleDropDown2:" destination="a28-Oa-Kmb" eventType="touchUpInside" id="dYj-Wn-J0W"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLz-r2-o7o">
+                                                <rect key="frame" x="20" y="210" width="374" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.82588575600000003" green="0.6989476375" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Justice For Charleena Lyles"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="titleLabel.numberofLines">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqs-hh-OrA">
+                                                <rect key="frame" x="202" y="515" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hE1-Tl-wKK">
+                                                <rect key="frame" x="31" y="751" width="46" height="82"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Back"/>
+                                                <connections>
+                                                    <segue destination="BYZ-38-t0r" kind="show" id="lZb-AK-dvW"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -260,11 +294,12 @@
                         <outlet property="businessDropDown" destination="uZ5-zL-86N" id="Qst-hg-yFr"/>
                         <outlet property="petitionsButton" destination="CbF-h9-JeE" id="y5d-zz-SIT"/>
                         <outlet property="petitionsDropDown" destination="B4s-3g-F1W" id="2hi-1a-JW4"/>
+                        <outlet property="petitionsDropDown2" destination="JLz-r2-o7o" id="f0Z-Ek-u16"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WfW-2g-Zwr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="786" y="-1160"/>
+            <point key="canvasLocation" x="785.50724637681162" y="-1160.4910714285713"/>
         </scene>
         <!--Louisville View Controller-->
         <scene sceneID="Gc8-ew-dhw">
@@ -294,6 +329,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="7iz-yv-aS5"/>
+        <segue reference="lZb-AK-dvW"/>
     </inferredMetricsTieBreakers>
 </document>

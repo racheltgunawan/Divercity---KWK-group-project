@@ -24,15 +24,20 @@ class SeattleViewController: UIViewController {
     @IBOutlet weak var petitionsButton: UIButton!
     //@IBOutlet weak var restaurantLabel: UILabel!
     @IBOutlet weak var petitionsDropDown: UIButton!
+    @IBOutlet weak var petitionsDropDown2: UIButton!
+    
     
     @IBAction func selectArticle(_ sender: Any) {
         UIView.animate(withDuration: 0.3, animations: {
             if self.articleDropDown.isHidden{
                 self.movePosition(button: self.businessButton, label: self.businessDropDown, yPosition: Double(self.articleDropDown2.frame.origin.y + self.articleDropDown2.frame.size.height))
                 self.movePosition(button: self.petitionsButton, label: self.petitionsDropDown, yPosition: Double(self.petitionsButton.frame.origin.y + (self.articleDropDown2.frame.size.height * 2)))
+                self.petitionsDropDown2.frame.origin.y = self.petitionsDropDown2.frame.origin.y + self.articleDropDown.frame.size.height
+                
             }else{
                 self.movePosition(button: self.businessButton, label: self.businessDropDown, yPosition: 50.0)
                 self.movePosition(button: self.petitionsButton, label: self.petitionsDropDown, yPosition: Double(self.petitionsButton.frame.origin.y - (self.articleDropDown2.frame.size.height * 2)))
+                self.petitionsDropDown2.frame.origin.y = self.petitionsDropDown2.frame.origin.y - self.articleDropDown.frame.size.height
             }
         })
         self.articleDropDown2.isHidden = !self.articleDropDown2.isHidden
@@ -44,8 +49,12 @@ class SeattleViewController: UIViewController {
         UIView.animate(withDuration: 0.3, animations: {
             if self.businessDropDown.isHidden{
                 self.movePosition(button: self.petitionsButton, label: self.petitionsDropDown, yPosition: Double(self.petitionsButton.frame.origin.y + self.businessDropDown.frame.size.height))
+                self.petitionsDropDown2.frame.origin.y = self.petitionsDropDown2.frame.origin.y + (self.businessDropDown.frame.size.height)
             }else{
                 self.movePosition(button: self.petitionsButton, label: self.petitionsDropDown, yPosition: Double(self.petitionsButton.frame.origin.y - self.businessDropDown.frame.size.height))
+                
+                
+                self.petitionsDropDown2.frame.origin.y = self.petitionsDropDown2.frame.origin.y - self.businessDropDown.frame.size.height
             }
         })
         self.businessDropDown.isHidden = !self.businessDropDown.isHidden
@@ -53,8 +62,13 @@ class SeattleViewController: UIViewController {
     }
     
     @IBAction func selectPetition(_ sender: Any) {
-        petitionsDropDown.frame.origin.y = petitionsButton.frame.origin.y + 50.0
-        petitionsDropDown.isHidden = !petitionsDropDown.isHidden
+        UIView.animate(withDuration: 0.3, animations: {
+            self.petitionsDropDown.frame.origin.y = self.petitionsButton.frame.origin.y + 50.0
+            self.petitionsDropDown.isHidden = !self.petitionsDropDown.isHidden
+            self.petitionsDropDown2.isHidden = !self.petitionsDropDown2.isHidden
+        
+    })
+        
     }
     
     override func viewDidLoad() {
@@ -78,6 +92,25 @@ class SeattleViewController: UIViewController {
     
     @IBAction func selectArticleDropDown2(_ sender: Any) {
         UIApplication.shared.open(URL(string: "https://www.instagram.com/p/CBmMN3UgxvJ/?igshid=r2lp5lmx7tp3")! as URL, options: [:], completionHandler: nil)
+    }
+    
+    var businesses = ["https://bakedfromthehart.com/about/", "http://kingphillycheesesteaksseattle2.cafecityguide.website", "http://chickenexpressseattle2.cafecityguide.website", "https://www.facebook.com/pg/nanassouthernkitchen/posts/?ref=page_internal"]
+    
+    
+    
+    
+    /*@IBAction func clickToSupportBusiness(_ sender: Any) {
+    let number = Int.random(in: 0 ..< 4)
+    UIApplication.shared.open(URL(string: "\(businesses[number])")! as URL, options: [:], completionHandler: nil)
+    
+    
+    
+    }*/
+    
+    //businessDropDown.titleLabel.numberOfLines = 2
+    @IBAction func randomBusiness(_ sender: Any) {
+        let number = Int.random(in: 0 ..< 4)
+        UIApplication.shared.open(URL(string: "\(businesses[number])")! as URL, options: [:], completionHandler: nil)
     }
     
     /*
