@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E4j-2X-axe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E4j-2X-axe">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -23,81 +23,147 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhG-ix-Du5">
-                                <rect key="frame" x="25" y="196" width="84" height="59"/>
+                                <rect key="frame" x="25" y="274" width="84" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Seattle, WA"/>
+                                <state key="normal" title="Seattle, WA">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="seattle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pmz-v1-zc1"/>
                                     <segue destination="a28-Oa-Kmb" kind="show" id="HVk-Em-jmj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVd-ND-b0w">
-                                <rect key="frame" x="162" y="210" width="91" height="30"/>
+                                <rect key="frame" x="154" y="288" width="91" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Louisville, KY"/>
+                                <state key="normal" title="Louisville, KY">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="louisville:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Tu-5w-IZY"/>
                                     <segue destination="rIH-e7-kun" kind="show" id="1a8-PQ-hkH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xto-CH-1A7">
-                                <rect key="frame" x="169" y="444" width="76" height="30"/>
+                                <rect key="frame" x="169" y="516" width="76" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Aurora, CO"/>
+                                <state key="normal" title="Aurora, CO">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="aurora:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NCb-cc-yTF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZ5-KL-e8d">
-                                <rect key="frame" x="280" y="209" width="114" height="30"/>
+                                <rect key="frame" x="280" y="288" width="114" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Minneapolis, MN"/>
+                                <state key="normal" title="Minneapolis, MN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="minneapolis:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wZ6-rL-7Ua"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ny2-GJ-4N6">
-                                <rect key="frame" x="40" y="444" width="94" height="30"/>
+                                <rect key="frame" x="20" y="516" width="94" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="New York, NY"/>
+                                <state key="normal" title="New York, NY">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="newyork:" destination="BYZ-38-t0r" eventType="touchUpInside" id="css-jp-5EX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ijx-De-ELC">
-                                <rect key="frame" x="281" y="444" width="112" height="30"/>
+                                <rect key="frame" x="280" y="516" width="112" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Los Angeles, CA"/>
+                                <state key="normal" title="Los Angeles, CA">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="losangeles:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YuG-Vy-Fa9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2c-k1-iG4">
-                                <rect key="frame" x="29" y="649" width="77" height="30"/>
+                                <rect key="frame" x="29" y="730" width="77" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Chicago, IL"/>
+                                <state key="normal" title="Chicago, IL">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="chicago:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FUn-GQ-ugs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDI-OP-BeQ">
-                                <rect key="frame" x="164" y="649" width="86" height="30"/>
+                                <rect key="frame" x="159" y="730" width="86" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Houston, TX"/>
+                                <state key="normal" title="Houston, TX">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="houston:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q4t-Gl-pK8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBr-gf-ICp">
-                                <rect key="frame" x="287" y="649" width="100" height="30"/>
+                                <rect key="frame" x="286" y="730" width="100" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Columbus, OH"/>
+                                <state key="normal" title="Columbus, OH">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="columbus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rne-bu-umt"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Seattle City Img" translatesAutoresizingMaskIntoConstraints="NO" id="WA1-C9-EX8">
+                                <rect key="frame" x="22" y="192" width="92" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.83748964930000003" blue="0.89371369190000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="louisville, kentucky" translatesAutoresizingMaskIntoConstraints="NO" id="UQ3-pw-sEx">
+                                <rect key="frame" x="156" y="192" width="92" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.83748964930000003" blue="0.89371369190000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Minneapolis" translatesAutoresizingMaskIntoConstraints="NO" id="xfB-uy-I2S">
+                                <rect key="frame" x="292" y="192" width="89" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.83748964930000003" blue="0.89371369190000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="new york ny" translatesAutoresizingMaskIntoConstraints="NO" id="gNt-bA-6ct">
+                                <rect key="frame" x="22" y="420" width="92" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.83748964930000003" blue="0.89371369190000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="aurora co" translatesAutoresizingMaskIntoConstraints="NO" id="3qN-7V-9H3">
+                                <rect key="frame" x="161" y="420" width="92" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.83748964930000003" blue="0.89371369190000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="los ang" translatesAutoresizingMaskIntoConstraints="NO" id="FD3-UR-CJ6">
+                                <rect key="frame" x="292" y="420" width="92" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.83748964930000003" blue="0.89371369190000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chiicago" translatesAutoresizingMaskIntoConstraints="NO" id="9gM-KK-Bg2">
+                                <rect key="frame" x="22" y="634" width="92" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.83748964930000003" blue="0.89371369190000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="houston" translatesAutoresizingMaskIntoConstraints="NO" id="oQb-Jz-nAd">
+                                <rect key="frame" x="161" y="634" width="92" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.83748964930000003" blue="0.89371369190000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="columbus" translatesAutoresizingMaskIntoConstraints="NO" id="nk7-gn-159">
+                                <rect key="frame" x="292" y="634" width="92" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.83748964930000003" blue="0.89371369190000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.96043568849563599" green="0.764537513256073" blue="0.83276420831680298" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="LdP-lZ-oMq"/>
@@ -115,21 +181,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9S-pZ-GqH">
-                                <rect key="frame" x="184" y="572" width="46" height="30"/>
+                                <rect key="frame" x="92" y="637" width="230" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Click Here to Proceed!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="Hyr-eV-569"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pink and Maroon Beauty Logo" translatesAutoresizingMaskIntoConstraints="NO" id="ag6-O1-ck2">
+                                <rect key="frame" x="84" y="299" width="246" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to DiverCity!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWY-YG-yEs">
+                                <rect key="frame" x="41" y="222" width="332" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="33"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.96043568849563599" green="0.764537513256073" blue="0.83276420831680298" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="D4Y-ak-2wP"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bqu-SV-YC4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-27" y="-95"/>
+            <point key="canvasLocation" x="-27.536231884057973" y="-95.089285714285708"/>
         </scene>
         <!--Seattle View Controller-->
         <scene sceneID="m5H-M5-eyw">
@@ -155,24 +236,28 @@
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOD-nn-hhe">
                                                 <rect key="frame" x="0.0" y="50" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.96640938520431519" green="0.95903533697128296" blue="0.87187319993972778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.84048401569999998" green="1" blue="0.92731338939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="Bx6-Ip-Yxe"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <state key="normal" title="Business"/>
+                                                <state key="normal" title="Business">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="selectBusiness:" destination="a28-Oa-Kmb" eventType="touchUpInside" id="DDc-AP-4r3"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmU-cg-ziC">
                                                 <rect key="frame" x="0.0" y="8" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.96640938520431519" green="0.95903533697128296" blue="0.87187319993972778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.78644367029999995" green="1" blue="0.71331678310000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="SnG-La-GRu"/>
                                                     <constraint firstAttribute="width" constant="414" id="zMh-AC-osO"/>
                                                 </constraints>
-                                                <state key="normal" title="Article"/>
+                                                <state key="normal" title="Article">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="selectArticle:" destination="a28-Oa-Kmb" eventType="touchUpInside" id="QHs-rs-wuI"/>
                                                 </connections>
@@ -183,7 +268,9 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="dFP-lZ-BSk"/>
                                                 </constraints>
-                                                <state key="normal" title="Click here to learn about Charleena Lyles"/>
+                                                <state key="normal" title="Click here to learn about Charleena Lyles">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="selectArticleDropDown:" destination="a28-Oa-Kmb" eventType="touchUpInside" id="lu0-af-pxc"/>
                                                 </connections>
@@ -266,10 +353,6 @@
                                                     <action selector="petitionsLink2:" destination="a28-Oa-Kmb" eventType="touchUpInside" id="wvH-Y9-1CX"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqs-hh-OrA">
-                                                <rect key="frame" x="202" y="515" width="30" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hE1-Tl-wKK">
                                                 <rect key="frame" x="31" y="751" width="46" height="82"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -279,7 +362,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" red="0.96043568849563599" green="0.764537513256073" blue="0.83276420831680298" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="HCy-S9-nbO" firstAttribute="centerY" secondItem="opV-14-uyO" secondAttribute="centerY" id="4uo-2r-Gnm"/>
                                             <constraint firstItem="C8E-RQ-dV9" firstAttribute="top" secondItem="fmU-cg-ziC" secondAttribute="bottom" constant="-8" id="4wl-fJ-9Wa"/>
@@ -372,4 +455,16 @@
     <inferredMetricsTieBreakers>
         <segue reference="Hyr-eV-569"/>
     </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Minneapolis" width="243" height="169"/>
+        <image name="Pink and Maroon Beauty Logo" width="1500" height="1500"/>
+        <image name="Seattle City Img" width="256" height="177"/>
+        <image name="aurora co" width="280" height="177"/>
+        <image name="chiicago" width="249" height="178"/>
+        <image name="columbus" width="242" height="161"/>
+        <image name="houston" width="229" height="168"/>
+        <image name="los ang" width="251" height="154"/>
+        <image name="louisville, kentucky" width="268" height="170"/>
+        <image name="new york ny" width="277" height="164"/>
+    </resources>
 </document>
