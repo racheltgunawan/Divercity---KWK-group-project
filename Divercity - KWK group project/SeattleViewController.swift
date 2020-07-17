@@ -60,10 +60,7 @@ class SeattleViewController: UIViewController {
             self.petitionsDropDown2.isHidden = !self.petitionsDropDown2.isHidden
             self.petitionsDropDown.frame.origin.y = self.petitionsButton.frame.origin.y + 50.0
             self.petitionsDropDown2.frame.origin.y = self.petitionsDropDown.frame.origin.y + self.petitionsDropDown.frame.size.height
-            
-        
-    })
-        
+        })
     }
     
     override func viewDidLoad() {
@@ -87,6 +84,9 @@ class SeattleViewController: UIViewController {
     
     @IBAction func selectArticleDropDown(_ sender: Any) {
         UIApplication.shared.open(URL(string: "https://www.huffpost.com/entry/say-her-name-charleena-lyles-the-story-you-havent_b_59627e64e4b0cf3c8e8d59b0")! as URL, options: [:], completionHandler: nil)
+        /*self.articleButton.isHidden = false;
+        self.petitionsButton.isHidden = false;
+        self.businessButton.isHidden = false;*/
     }
     
     @IBAction func selectArticleDropDown2(_ sender: Any) {

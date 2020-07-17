@@ -279,22 +279,12 @@
                                                     <action selector="selectArticle:" destination="a28-Oa-Kmb" eventType="touchUpInside" id="QHs-rs-wuI"/>
                                                 </connections>
                                             </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8E-RQ-dV9">
-                                                <rect key="frame" x="0.0" y="50" width="414" height="50"/>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uZ5-zL-86N">
+                                                <rect key="frame" x="0.0" y="100" width="414" height="50"/>
                                                 <color key="backgroundColor" red="0.96640938520431519" green="0.95903533697128296" blue="0.87187319993972778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="dFP-lZ-BSk"/>
+                                                    <constraint firstAttribute="height" constant="50" id="7VL-le-67T"/>
                                                 </constraints>
-                                                <state key="normal" title="Click here to learn about Charleena Lyles">
-                                                    <color key="titleColor" red="0.38039215686274508" green="0.039215686274509803" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="selectArticleDropDown:" destination="a28-Oa-Kmb" eventType="touchUpInside" id="lu0-af-pxc"/>
-                                                </connections>
-                                            </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uZ5-zL-86N">
-                                                <rect key="frame" x="-20" y="100" width="414" height="50"/>
-                                                <color key="backgroundColor" red="0.96640938520431519" green="0.95903533697128296" blue="0.87187319993972778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal">
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="Click Here to Support a Random Black Owned Business!">
@@ -316,8 +306,11 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B4s-3g-F1W">
-                                                <rect key="frame" x="0.0" y="150" width="414" height="30"/>
+                                                <rect key="frame" x="0.0" y="150" width="414" height="50"/>
                                                 <color key="backgroundColor" red="0.96640938520431519" green="0.95903533697128296" blue="0.87187319993972778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="dve-3Q-L8t"/>
+                                                </constraints>
                                                 <state key="normal">
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="Remove Confederate Monument from Seattle Cemetary">
@@ -367,17 +360,6 @@
                                                     <action selector="petitionsLink2:" destination="a28-Oa-Kmb" eventType="touchUpInside" id="wvH-Y9-1CX"/>
                                                 </connections>
                                             </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fV2-yC-qy8">
-                                                <rect key="frame" x="-8" y="99" width="414" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.96640938520431519" green="0.95903533697128296" blue="0.87187319993972778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="More information about Charleena Lyles">
-                                                    <color key="titleColor" red="0.38039215686274508" green="0.039215686274509803" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="selectArticleDropDown2:" destination="a28-Oa-Kmb" eventType="touchUpInside" id="dYj-Wn-J0W"/>
-                                                </connections>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hE1-Tl-wKK">
                                                 <rect key="frame" x="33" y="740" width="92" height="51"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -389,9 +371,34 @@
                                                     <segue destination="BYZ-38-t0r" kind="show" id="lZb-AK-dvW"/>
                                                 </connections>
                                             </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fV2-yC-qy8">
+                                                <rect key="frame" x="-8" y="99" width="414" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.96640938520431519" green="0.95903533697128296" blue="0.87187319993972778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="More information about Charleena Lyles">
+                                                    <color key="titleColor" red="0.38039215686274508" green="0.039215686274509803" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="selectArticleDropDown2:" destination="a28-Oa-Kmb" eventType="touchUpInside" id="dYj-Wn-J0W"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8E-RQ-dV9">
+                                                <rect key="frame" x="0.0" y="50" width="414" height="50"/>
+                                                <color key="backgroundColor" red="0.96640938520431519" green="0.95903533697128296" blue="0.87187319993972778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="dFP-lZ-BSk"/>
+                                                </constraints>
+                                                <state key="normal" title="Click here to learn about Charleena Lyles">
+                                                    <color key="titleColor" red="0.38039215686274508" green="0.039215686274509803" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="selectArticleDropDown:" destination="a28-Oa-Kmb" eventType="touchUpInside" id="lu0-af-pxc"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.96043568849563599" green="0.764537513256073" blue="0.83276420831680298" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="uZ5-zL-86N" secondAttribute="trailing" id="36S-aI-GfJ"/>
                                             <constraint firstItem="HCy-S9-nbO" firstAttribute="centerY" secondItem="opV-14-uyO" secondAttribute="centerY" id="4uo-2r-Gnm"/>
                                             <constraint firstItem="C8E-RQ-dV9" firstAttribute="top" secondItem="fmU-cg-ziC" secondAttribute="bottom" constant="-8" id="4wl-fJ-9Wa"/>
                                             <constraint firstItem="fmU-cg-ziC" firstAttribute="leading" secondItem="kOD-nn-hhe" secondAttribute="leading" id="5mE-Dh-QfT"/>
@@ -408,6 +415,7 @@
                                             <constraint firstItem="fmU-cg-ziC" firstAttribute="centerX" secondItem="opV-14-uyO" secondAttribute="centerX" id="RBX-al-WXs"/>
                                             <constraint firstItem="CbF-h9-JeE" firstAttribute="top" secondItem="uZ5-zL-86N" secondAttribute="top" id="RYM-f0-MmW"/>
                                             <constraint firstAttribute="trailing" secondItem="B4s-3g-F1W" secondAttribute="trailing" id="RrR-oh-lbT"/>
+                                            <constraint firstItem="uZ5-zL-86N" firstAttribute="leading" secondItem="opV-14-uyO" secondAttribute="leading" id="SWd-zu-wkz"/>
                                             <constraint firstItem="HCy-S9-nbO" firstAttribute="top" secondItem="opV-14-uyO" secondAttribute="top" constant="475" id="Wpz-1j-PK6"/>
                                             <constraint firstAttribute="height" constant="1000" id="bZD-9i-tvp"/>
                                             <constraint firstItem="kOD-nn-hhe" firstAttribute="leading" secondItem="CbF-h9-JeE" secondAttribute="leading" id="g9o-jT-lZL"/>
