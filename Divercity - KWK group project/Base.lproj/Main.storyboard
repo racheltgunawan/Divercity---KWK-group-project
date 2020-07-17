@@ -245,8 +245,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FGO-rq-Rlr">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="opV-14-uyO" customClass="SeattleScrollView" customModule="Divercity___KWK_group_project" customModuleProvider="target">
-                                        <rect key="frame" x="8" y="-41" width="414" height="1000"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="opV-14-uyO" customClass="SeattleScrollView" customModule="Divercity___KWK_group_project" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="HCy-S9-nbO">
                                                 <rect key="frame" x="0.0" y="475" width="414" height="50"/>
@@ -279,14 +279,14 @@
                                                     <action selector="selectArticle:" destination="a28-Oa-Kmb" eventType="touchUpInside" id="QHs-rs-wuI"/>
                                                 </connections>
                                             </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8E-RQ-dV9">
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8E-RQ-dV9">
                                                 <rect key="frame" x="0.0" y="50" width="414" height="50"/>
                                                 <color key="backgroundColor" red="0.96640938520431519" green="0.95903533697128296" blue="0.87187319993972778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="dFP-lZ-BSk"/>
                                                 </constraints>
                                                 <state key="normal" title="Click here to learn about Charleena Lyles">
-                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" red="0.38039215686274508" green="0.039215686274509803" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="selectArticleDropDown:" destination="a28-Oa-Kmb" eventType="touchUpInside" id="lu0-af-pxc"/>
@@ -299,7 +299,7 @@
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="Click Here to Support a Random Black Owned Business!">
                                                             <attributes>
-                                                                <color key="NSColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="NSColor" red="0.38039215686274508" green="0.039215686274509803" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <font key="NSFont" metaFont="system" size="15"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
@@ -315,14 +315,14 @@
                                                     <action selector="randomBusiness:" destination="a28-Oa-Kmb" eventType="touchUpInside" id="mY8-zT-uue"/>
                                                 </connections>
                                             </button>
-                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B4s-3g-F1W">
-                                                <rect key="frame" x="0.0" y="150" width="414" height="50"/>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B4s-3g-F1W">
+                                                <rect key="frame" x="0.0" y="150" width="414" height="30"/>
                                                 <color key="backgroundColor" red="0.96640938520431519" green="0.95903533697128296" blue="0.87187319993972778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal">
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="Remove Confederate Monument from Seattle Cemetary">
                                                             <attributes>
-                                                                <color key="NSColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="NSColor" red="0.38039215686274508" green="0.039215686274509803" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <font key="NSFont" metaFont="system" size="15"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
@@ -356,7 +356,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.96640938520431519" green="0.95903533697128296" blue="0.87187319993972778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Justice For Charleena Lyles">
-                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" red="0.38039215686274508" green="0.039215686274509803" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="titleLabel.numberofLines">
@@ -367,26 +367,26 @@
                                                     <action selector="petitionsLink2:" destination="a28-Oa-Kmb" eventType="touchUpInside" id="wvH-Y9-1CX"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hE1-Tl-wKK">
-                                                <rect key="frame" x="31" y="782" width="46" height="51"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Back">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="BYZ-38-t0r" kind="show" id="lZb-AK-dvW"/>
-                                                </connections>
-                                            </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fV2-yC-qy8">
                                                 <rect key="frame" x="-8" y="99" width="414" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.96640938520431519" green="0.95903533697128296" blue="0.87187319993972778" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="More information about Charleena Lyles">
-                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" red="0.38039215686274508" green="0.039215686274509803" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="selectArticleDropDown2:" destination="a28-Oa-Kmb" eventType="touchUpInside" id="dYj-Wn-J0W"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hE1-Tl-wKK">
+                                                <rect key="frame" x="33" y="740" width="92" height="51"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Back">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="BYZ-38-t0r" kind="show" id="lZb-AK-dvW"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -395,19 +395,25 @@
                                             <constraint firstItem="HCy-S9-nbO" firstAttribute="centerY" secondItem="opV-14-uyO" secondAttribute="centerY" id="4uo-2r-Gnm"/>
                                             <constraint firstItem="C8E-RQ-dV9" firstAttribute="top" secondItem="fmU-cg-ziC" secondAttribute="bottom" constant="-8" id="4wl-fJ-9Wa"/>
                                             <constraint firstItem="fmU-cg-ziC" firstAttribute="leading" secondItem="kOD-nn-hhe" secondAttribute="leading" id="5mE-Dh-QfT"/>
+                                            <constraint firstItem="uZ5-zL-86N" firstAttribute="leading" secondItem="opV-14-uyO" secondAttribute="leading" id="6KY-f4-0d3"/>
                                             <constraint firstItem="uZ5-zL-86N" firstAttribute="top" secondItem="kOD-nn-hhe" secondAttribute="bottom" id="8IO-NQ-4uG"/>
                                             <constraint firstItem="kOD-nn-hhe" firstAttribute="top" secondItem="opV-14-uyO" secondAttribute="top" constant="50" id="8M5-9L-sTn"/>
                                             <constraint firstItem="fmU-cg-ziC" firstAttribute="trailing" secondItem="kOD-nn-hhe" secondAttribute="trailing" id="9bL-wj-KFG"/>
                                             <constraint firstItem="kOD-nn-hhe" firstAttribute="centerX" secondItem="uZ5-zL-86N" secondAttribute="centerX" id="A5v-hP-k2m"/>
                                             <constraint firstItem="kOD-nn-hhe" firstAttribute="centerX" secondItem="C8E-RQ-dV9" secondAttribute="centerX" id="E00-l8-yfB"/>
                                             <constraint firstItem="C8E-RQ-dV9" firstAttribute="leading" secondItem="uZ5-zL-86N" secondAttribute="leading" id="JCM-g1-NCy"/>
+                                            <constraint firstItem="B4s-3g-F1W" firstAttribute="leading" secondItem="opV-14-uyO" secondAttribute="leading" id="MZv-iZ-49u"/>
                                             <constraint firstItem="C8E-RQ-dV9" firstAttribute="leading" secondItem="opV-14-uyO" secondAttribute="leading" constant="20" id="PdT-aI-xv6"/>
+                                            <constraint firstAttribute="trailing" secondItem="uZ5-zL-86N" secondAttribute="trailing" id="QmK-PQ-4Ds"/>
                                             <constraint firstItem="fmU-cg-ziC" firstAttribute="centerX" secondItem="opV-14-uyO" secondAttribute="centerX" id="RBX-al-WXs"/>
                                             <constraint firstItem="CbF-h9-JeE" firstAttribute="top" secondItem="uZ5-zL-86N" secondAttribute="top" id="RYM-f0-MmW"/>
+                                            <constraint firstAttribute="trailing" secondItem="B4s-3g-F1W" secondAttribute="trailing" id="RrR-oh-lbT"/>
                                             <constraint firstItem="HCy-S9-nbO" firstAttribute="top" secondItem="opV-14-uyO" secondAttribute="top" constant="475" id="Wpz-1j-PK6"/>
                                             <constraint firstAttribute="height" constant="1000" id="bZD-9i-tvp"/>
                                             <constraint firstItem="kOD-nn-hhe" firstAttribute="leading" secondItem="CbF-h9-JeE" secondAttribute="leading" id="g9o-jT-lZL"/>
                                             <constraint firstItem="kOD-nn-hhe" firstAttribute="trailing" secondItem="CbF-h9-JeE" secondAttribute="trailing" id="kFj-Ua-V5X"/>
+                                            <constraint firstAttribute="trailing" secondItem="C8E-RQ-dV9" secondAttribute="trailing" id="lOD-OK-rTS"/>
+                                            <constraint firstItem="C8E-RQ-dV9" firstAttribute="leading" secondItem="opV-14-uyO" secondAttribute="leading" id="m6L-QS-snQ"/>
                                             <constraint firstItem="fmU-cg-ziC" firstAttribute="leading" secondItem="HCy-S9-nbO" secondAttribute="leading" id="mjB-yO-5LX"/>
                                             <constraint firstItem="C8E-RQ-dV9" firstAttribute="leading" secondItem="B4s-3g-F1W" secondAttribute="leading" id="qxy-4y-qz9"/>
                                             <constraint firstItem="fmU-cg-ziC" firstAttribute="trailing" secondItem="HCy-S9-nbO" secondAttribute="trailing" id="sKE-io-tnV"/>
