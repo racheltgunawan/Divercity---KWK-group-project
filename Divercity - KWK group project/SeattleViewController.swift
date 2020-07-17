@@ -93,7 +93,7 @@ class SeattleViewController: UIViewController {
         UIApplication.shared.open(URL(string: "https://www.instagram.com/p/CBmMN3UgxvJ/?igshid=r2lp5lmx7tp3")! as URL, options: [:], completionHandler: nil)
     }
     
-    var businesses = ["https://bakedfromthehart.com/about/", "http://kingphillycheesesteaksseattle2.cafecityguide.website", "http://chickenexpressseattle2.cafecityguide.website", "https://www.facebook.com/pg/nanassouthernkitchen/posts/?ref=page_internal"]
+    var businesses = ["https://bakedfromthehart.com/about/", "http://kingphillycheesesteaksseattle2.cafecityguide.website", "http://chickenexpressseattle2.cafecityguide.website", "https://www.facebook.com/pg/nanassouthernkitchen/posts/?ref=page_internal", "https://jebenacafe.com", "https://thecomfortzonesoulfood.com"]
     
     
     
@@ -108,7 +108,7 @@ class SeattleViewController: UIViewController {
     
     //businessDropDown.titleLabel.numberOfLines = 2
     @IBAction func randomBusiness(_ sender: Any) {
-        let number = Int.random(in: 0 ..< 4)
+        let number = Int.random(in: 0 ..< 6)
         UIApplication.shared.open(URL(string: "\(businesses[number])")! as URL, options: [:], completionHandler: nil)
     }
     
