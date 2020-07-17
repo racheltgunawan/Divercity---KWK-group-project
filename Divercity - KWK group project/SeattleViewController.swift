@@ -32,12 +32,12 @@ class SeattleViewController: UIViewController {
             if self.articleDropDown.isHidden{
                 self.movePosition(button: self.businessButton, label: self.businessDropDown, yPosition: Double(self.articleDropDown2.frame.origin.y + self.articleDropDown2.frame.size.height))
                 self.movePosition(button: self.petitionsButton, label: self.petitionsDropDown, yPosition: Double(self.petitionsButton.frame.origin.y + (self.articleDropDown2.frame.size.height * 2)))
-                self.petitionsDropDown2.frame.origin.y = self.petitionsDropDown2.frame.origin.y + self.articleDropDown.frame.size.height
+                self.petitionsDropDown2.frame.origin.y = self.petitionsDropDown.frame.origin.y + self.petitionsDropDown.frame.size.height
                 
             }else{
                 self.movePosition(button: self.businessButton, label: self.businessDropDown, yPosition: 50.0)
                 self.movePosition(button: self.petitionsButton, label: self.petitionsDropDown, yPosition: Double(self.petitionsButton.frame.origin.y - (self.articleDropDown2.frame.size.height * 2)))
-                self.petitionsDropDown2.frame.origin.y = self.petitionsDropDown2.frame.origin.y - self.articleDropDown.frame.size.height
+                self.petitionsDropDown2.frame.origin.y = self.petitionsDropDown.frame.origin.y + self.petitionsDropDown.frame.size.height
             }
         })
         self.articleDropDown2.isHidden = !self.articleDropDown2.isHidden
@@ -49,12 +49,12 @@ class SeattleViewController: UIViewController {
         UIView.animate(withDuration: 0.3, animations: {
             if self.businessDropDown.isHidden{
                 self.movePosition(button: self.petitionsButton, label: self.petitionsDropDown, yPosition: Double(self.petitionsButton.frame.origin.y + self.businessDropDown.frame.size.height))
-                self.petitionsDropDown2.frame.origin.y = self.petitionsDropDown2.frame.origin.y + (self.businessDropDown.frame.size.height)
+                self.petitionsDropDown2.frame.origin.y = self.petitionsDropDown.frame.origin.y + self.petitionsDropDown.frame.size.height
             }else{
                 self.movePosition(button: self.petitionsButton, label: self.petitionsDropDown, yPosition: Double(self.petitionsButton.frame.origin.y - self.businessDropDown.frame.size.height))
                 
                 
-                self.petitionsDropDown2.frame.origin.y = self.petitionsDropDown2.frame.origin.y - self.businessDropDown.frame.size.height
+                self.petitionsDropDown2.frame.origin.y = self.petitionsDropDown.frame.origin.y + self.petitionsDropDown.frame.size.height
             }
         })
         self.businessDropDown.isHidden = !self.businessDropDown.isHidden
@@ -63,9 +63,10 @@ class SeattleViewController: UIViewController {
     
     @IBAction func selectPetition(_ sender: Any) {
         UIView.animate(withDuration: 0.3, animations: {
-            self.petitionsDropDown.frame.origin.y = self.petitionsButton.frame.origin.y + 50.0
             self.petitionsDropDown.isHidden = !self.petitionsDropDown.isHidden
             self.petitionsDropDown2.isHidden = !self.petitionsDropDown2.isHidden
+            self.petitionsDropDown.frame.origin.y = self.petitionsButton.frame.origin.y + 50.0
+            self.petitionsDropDown2.frame.origin.y = self.petitionsDropDown.frame.origin.y + self.petitionsDropDown.frame.size.height
         
     })
         
