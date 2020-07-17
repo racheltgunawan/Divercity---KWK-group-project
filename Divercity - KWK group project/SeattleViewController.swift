@@ -53,7 +53,6 @@ class SeattleViewController: UIViewController {
             }else{
                 self.movePosition(button: self.petitionsButton, label: self.petitionsDropDown, yPosition: Double(self.petitionsButton.frame.origin.y - self.businessDropDown.frame.size.height))
                 
-                
                 self.petitionsDropDown2.frame.origin.y = self.petitionsDropDown.frame.origin.y + self.petitionsDropDown.frame.size.height
             }
         })
@@ -67,6 +66,7 @@ class SeattleViewController: UIViewController {
             self.petitionsDropDown2.isHidden = !self.petitionsDropDown2.isHidden
             self.petitionsDropDown.frame.origin.y = self.petitionsButton.frame.origin.y + 50.0
             self.petitionsDropDown2.frame.origin.y = self.petitionsDropDown.frame.origin.y + self.petitionsDropDown.frame.size.height
+            
         
     })
         
@@ -114,14 +114,12 @@ class SeattleViewController: UIViewController {
         UIApplication.shared.open(URL(string: "\(businesses[number])")! as URL, options: [:], completionHandler: nil)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func petitionsLink1(_ sender: Any) {
+        UIApplication.shared.open(URL(string: "https://www.change.org/p/lakeview-cemetery-remove-confederate-memorial-in-seattle-lakeview-cemetery?source_location=topic_page")! as URL, options: [:], completionHandler: nil)
     }
-    */
-
+    
+    @IBAction func petitionsLink2(_ sender: Any) {
+        UIApplication.shared.open(URL(string: "https://www.change.org/p/mayor-jenny-durkan-justice-for-charleena-lyles")! as URL, options: [:], completionHandler: nil)
+    }
+    
 }

@@ -158,13 +158,13 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="dFP-lZ-BSk"/>
                                                 </constraints>
-                                                <state key="normal" title="click here to learn about Charleena Lyles"/>
+                                                <state key="normal" title="Click here to learn about Charleena Lyles"/>
                                                 <connections>
                                                     <action selector="selectArticleDropDown:" destination="a28-Oa-Kmb" eventType="touchUpInside" id="lu0-af-pxc"/>
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uZ5-zL-86N">
-                                                <rect key="frame" x="20" y="100" width="374" height="153"/>
+                                                <rect key="frame" x="20" y="100" width="374" height="50"/>
                                                 <color key="backgroundColor" red="0.64872708489999997" green="0.62513353309999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal">
                                                     <attributedString key="attributedTitle">
@@ -176,12 +176,17 @@
                                                         </fragment>
                                                     </attributedString>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="titleLabel.numberofLines">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="randomBusiness:" destination="a28-Oa-Kmb" eventType="touchUpInside" id="mY8-zT-uue"/>
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B4s-3g-F1W">
-                                                <rect key="frame" x="20" y="150" width="374" height="50"/>
+                                                <rect key="frame" x="20" y="150" width="374" height="80"/>
                                                 <color key="backgroundColor" red="0.64872708489999997" green="0.62513353309999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal">
                                                     <attributedString key="attributedTitle">
@@ -193,6 +198,14 @@
                                                         </fragment>
                                                     </attributedString>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="titleLabel.numberofLines">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="petitionsLink1:" destination="a28-Oa-Kmb" eventType="touchUpInside" id="vbb-kw-Juf"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CbF-h9-JeE">
                                                 <rect key="frame" x="0.0" y="100" width="414" height="50"/>
@@ -224,6 +237,9 @@
                                                         <integer key="value" value="2"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="petitionsLink2:" destination="a28-Oa-Kmb" eventType="touchUpInside" id="wvH-Y9-1CX"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqs-hh-OrA">
                                                 <rect key="frame" x="202" y="515" width="30" height="30"/>
@@ -299,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WfW-2g-Zwr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="785.50724637681162" y="-1160.4910714285713"/>
+            <point key="canvasLocation" x="770" y="-1254"/>
         </scene>
         <!--Louisville View Controller-->
         <scene sceneID="Gc8-ew-dhw">
