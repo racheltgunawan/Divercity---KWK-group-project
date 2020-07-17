@@ -11,21 +11,15 @@ import UIKit
 class SeattleViewController: UIViewController {
 
     @IBOutlet weak var articleButton: UIButton!
-    //@IBOutlet weak var articleLabel: UILabel!
-    
     @IBOutlet weak var articleDropDown: UIButton!
     @IBOutlet weak var articleDropDown2: UIButton!
     
     @IBOutlet weak var businessButton: UIButton!
-    //@IBOutlet weak var businessLabel: UILabel!
     @IBOutlet weak var businessDropDown: UIButton!
     
-    
     @IBOutlet weak var petitionsButton: UIButton!
-    //@IBOutlet weak var restaurantLabel: UILabel!
     @IBOutlet weak var petitionsDropDown: UIButton!
     @IBOutlet weak var petitionsDropDown2: UIButton!
-    
     
     @IBAction func selectArticle(_ sender: Any) {
         UIView.animate(withDuration: 0.3, animations: {
@@ -80,12 +74,16 @@ class SeattleViewController: UIViewController {
         articleDropDown2.isHidden = true
         businessDropDown.isHidden = true
         petitionsDropDown.isHidden = true
+        /*
+        articleDropDown.frame.size.height = 80
+        articleDropDown2.frame.size.height = 80
+ */
     }
+    
     func movePosition(button : UIButton, label : UIButton, yPosition : Double){
         button.frame = CGRect(x: 0.0, y: yPosition, width: 414.0, height: 50.0)
         label.frame.origin.y = button.frame.origin.y + 50.0
     }
-    
     
     @IBAction func selectArticleDropDown(_ sender: Any) {
         UIApplication.shared.open(URL(string: "https://www.huffpost.com/entry/say-her-name-charleena-lyles-the-story-you-havent_b_59627e64e4b0cf3c8e8d59b0")! as URL, options: [:], completionHandler: nil)
